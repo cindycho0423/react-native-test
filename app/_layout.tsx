@@ -4,7 +4,7 @@ import { Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
 import "react-native-reanimated";
 
-import { NAV_THEME } from "@/lib/constants";
+import { NAV_THEME } from "@/constants/Colors";
 import { useColorScheme } from "@/lib/useColorScheme";
 import { useLayoutEffect, useRef, useState } from "react";
 
@@ -19,7 +19,7 @@ const DARK_THEME: Theme = {
 
 export default function RootLayout() {
   const hasMounted = useRef(false);
-  const { colorScheme, isDarkColorScheme } = useColorScheme();
+  const { isDarkColorScheme } = useColorScheme();
   const [isColorSchemeLoaded, setIsColorSchemeLoaded] = useState(false);
 
   const [loaded] = useFonts({

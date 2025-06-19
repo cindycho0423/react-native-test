@@ -1,0 +1,10 @@
+{
+  "aliases": {
+    "components": "@/components",
+    "lib": "@/lib",
+    "hooks": "@/hooks",
+    "assets": "@/assets",
+    "constants": "@/constants",
+    "icons": "@/lib/icons"
+  }
+}
